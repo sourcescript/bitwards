@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateChallengesTable extends Migration {
+class CreateRewardsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,13 @@ class CreateChallengesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('challenges', function(Blueprint $table)
+		Schema::create('rewards', function(Blueprint $table)
 		{
 			$table->increments('id');
-            $table->text('business_id');
+            $table->integer('business_id');
             $table->string('name');
-            $table->text('description');
-            $table->string('image');
             $table->integer('point');
-            $table->text('type');
+            $table->text('description');
             $table->timestamp('deleted_at')->nullable();
 			$table->timestamps();
 		});
@@ -34,7 +32,7 @@ class CreateChallengesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('challenges');
+		Schema::drop('rewards');
 	}
 
 }

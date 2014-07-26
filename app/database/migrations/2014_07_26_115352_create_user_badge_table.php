@@ -17,7 +17,6 @@ class CreateUserBadgeTable extends Migration {
 			$table->increments('id');
             $table->integer('user_id');
             $table->integer('badge_id');
-            $table->timestamp('deleted_at');
 			$table->timestamps();
 		});
 	}

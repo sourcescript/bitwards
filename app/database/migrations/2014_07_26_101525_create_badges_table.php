@@ -20,7 +20,7 @@ class CreateBadgesTable extends Migration {
             $table->text('description');
             $table->text('requirement_type');
             $table->integer('requirement');
-            $table->timestamp('deleted_at');
+            $table->timestamp('deleted_at')->nullable();
 			$table->timestamps();
 		});
 	}
