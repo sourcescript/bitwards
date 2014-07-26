@@ -1,3 +1,6 @@
+#migration
+php artisan migrate --package="lucadegasperi/oauth2-server-laravel"
+
 # OAUTH
 ----
 ## Get Access Token

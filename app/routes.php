@@ -34,21 +34,16 @@ Route::group(['prefix' => '/api/v1'], function ()
     ###############################################################
     # API
     ###############################################################
-    Route::group(['before' => 'oauth:user_profile'], function() use ($namespace)
+    Route::group(['before' => 'oauth:user'], function() use ($namespace)
     {
         Route::resource('/users',$namespace.'User\UserController', ['only' => ['update', 'show']]);
         Route::get('/users/profile', $namespace.'User\UserController@userProfile');
-    });
-
-    Route::group(['before' => 'oauth::user_profile'], function() use ($namespace)
-    {
         Route::resource('/badges', $namespace.'Badges\BadgesController', ['only' => 'index', 'show']);
+        Route::resource('/challenges', $namespace.'Challenges\ChallengesController', ['only' => ['index', 'show']]);
+        Route::resource('/business', $namespace.'Business\BusinessController', ['only' => ['index', 'show']]);
     });
 
-    Route::group(['before' => 'oauth:user_profile'], function() use ($namespace)
-    {
-        Route::resource('/challenges', $namespace.'Challenges\ChallengesController', ['only' => ['index', 'show']]);
-    });
+
 
     ################################################################
     # OAUTH

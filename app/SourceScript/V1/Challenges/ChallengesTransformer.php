@@ -7,7 +7,13 @@ class ChallengesTransformer extends AbstractTransformer {
     public function transform($item)
     {
         return [
-            'id' => $item->id
+            'id' => (int) $item->id,
+            'business_id' => (int) $item->id,
+            'name' => $item->name,
+            'description' => $item->description,
+            'image' => $item->image,
+            'point' => (int) $item->point,
+            'type' => $item->type
         ];
     }
 }
