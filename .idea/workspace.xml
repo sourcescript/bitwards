@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="034f0e15-f5e8-4e0f-ad1d-343fed63fa2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsEloquentModel.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsEloquentModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsTransformer.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsTransformer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filters.php" afterPath="$PROJECT_DIR$/app/filters.php" />
     </list>
     <ignored path="angelhack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,6 +23,22 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="angelhack" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="filters.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/filters.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.030463576" vertical-offset="0" max-vertical-offset="2001">
+              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+              <folding>
+                <element signature="e#48#453#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -74,6 +88,8 @@
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsTransformer.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" />
+        <option value="$PROJECT_DIR$/app/filters.php" />
       </list>
     </option>
   </component>
@@ -221,6 +237,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OAuth2Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lucadegasperi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oauth2-server-laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,6 +584,102 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="barryvdh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angelhack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="barryvdh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel-cors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -578,14 +720,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="22" width="1243" height="778" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41029766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41029766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -621,14 +763,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="690">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/packages/barryvdh/laravel-ide-helper/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.24900663" vertical-offset="188" max-vertical-offset="1863">
@@ -640,20 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30463576" vertical-offset="0" max-vertical-offset="4968">
           <caret line="24" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="210" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7258278" vertical-offset="234" max-vertical-offset="1150">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/config/oauth2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9192053" vertical-offset="3772" max-vertical-offset="4554">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -919,14 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3960265" vertical-offset="483" max-vertical-offset="2208">
-          <caret line="43" column="105" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
@@ -996,6 +1108,64 @@
         <state vertical-scroll-proportion="0.42649007" vertical-offset="0" max-vertical-offset="755">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7615894" vertical-offset="46" max-vertical-offset="2208">
+          <caret line="36" column="40" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/lucadegasperi/oauth2-server-laravel/src/config/oauth2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9192053" vertical-offset="3772" max-vertical-offset="4554">
+          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36556292" vertical-offset="230" max-vertical-offset="1150">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.005298" vertical-offset="0" max-vertical-offset="2415">
+          <caret line="37" column="38" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69536424" vertical-offset="1752" max-vertical-offset="2507">
+          <caret line="100" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030463576" vertical-offset="0" max-vertical-offset="2001">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+          <folding>
+            <element signature="e#48#453#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

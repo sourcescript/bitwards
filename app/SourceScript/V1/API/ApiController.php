@@ -98,7 +98,7 @@ abstract class ApiController extends BaseController {
 
     public function respond($data, $code = 200, $headers = [])
     {
-        return Response::json($data, $code, $headers);
+        return Response::json($data, $code, $headers)->setCallback(Input::get('callback'));
     }
 
 
