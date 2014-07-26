@@ -65,6 +65,7 @@ class UserController extends ApiController {
     {
         try {
             $User = $this->UserRepository->findOrFail($id);
+            dd($User->badges);
             $transformedData = $this->UserTransformer->transform($User);
 
             $response = $this->respondItem($transformedData);
