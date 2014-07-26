@@ -4,7 +4,6 @@
     <list default="true" id="034f0e15-f5e8-4e0f-ad1d-343fed63fa2f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
     </list>
     <ignored path="angelhack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="UserEloquentModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6701987" vertical-offset="0" max-vertical-offset="755">
-              <caret line="23" column="93" selection-start-line="23" selection-start-column="93" selection-end-line="23" selection-end-column="93" />
+            <state vertical-scroll-proportion="0.6397351" vertical-offset="0" max-vertical-offset="755">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -66,12 +65,12 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_115352_create_user_badge_table.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserBadgeEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_101525_create_badges_table.php" />
-        <option value="$PROJECT_DIR$/app/SourceScript/V1/Badges/BadgesEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_101541_create_challenges_table.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_122627_create_user_challenge_table.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserChallengeEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php" />
+        <option value="$PROJECT_DIR$/app/SourceScript/V1/Badges/BadgesEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php" />
       </list>
     </option>
@@ -567,14 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Badges/BadgesEloquentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24370861" vertical-offset="0" max-vertical-offset="755">
-          <caret line="9" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_07_26_101541_create_challenges_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57880795" vertical-offset="0" max-vertical-offset="1012">
@@ -607,14 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48741722" vertical-offset="1058" max-vertical-offset="2599">
-          <caret line="67" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2741722" vertical-offset="0" max-vertical-offset="755">
@@ -623,10 +606,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Badges/BadgesEloquentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42649007" vertical-offset="0" max-vertical-offset="755">
+          <caret line="15" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6397351" vertical-offset="1012" max-vertical-offset="2714">
+          <caret line="70" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6701987" vertical-offset="0" max-vertical-offset="755">
-          <caret line="23" column="93" selection-start-line="23" selection-start-column="93" selection-end-line="23" selection-end-column="93" />
+        <state vertical-scroll-proportion="0.6397351" vertical-offset="0" max-vertical-offset="755">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>

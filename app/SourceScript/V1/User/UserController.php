@@ -65,7 +65,12 @@ class UserController extends ApiController {
     {
         try {
             $User = $this->UserRepository->findOrFail($id);
-            dd($User->badges);
+            $user = $User->badges;
+            $queries = \DB::getQueryLog();
+            $last_query = end($queries);
+            var_dump($user);
+            dd($last_query);
+
             $transformedData = $this->UserTransformer->transform($User);
 
             $response = $this->respondItem($transformedData);
