@@ -45,7 +45,9 @@ Route::group(['prefix' => '/api/v1'], function ()
         Route::post('/challenges/{id}/accept', $namespace.'User\UserController@acceptChallenge');
 
         Route::resource('/business', $namespace.'Business\BusinessController', ['only' => ['index', 'show']]);
+
         Route::resource('/rewards', $namespace.'Rewards\RewardsController', ['only' => ['index', 'show']]);
+        Route::post('/rewards/{id}/claim', $namespace.'User\UserController@claimReward');
     });
 
 

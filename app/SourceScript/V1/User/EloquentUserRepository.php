@@ -12,7 +12,6 @@ class EloquentUserRepository extends AbstractEloquentRepository implements UserR
 
     public function exists($fbId)
     {
-
             $user = $this->class
                 ->where('fb_id', $fbId)
                 ->first();
@@ -45,4 +44,26 @@ class EloquentUserRepository extends AbstractEloquentRepository implements UserR
         return $userChallengeId;
     }
 
+    public function claimReward($userId, $rewardId)
+    {
+        $user = $this->class
+            ->where('id', $userId)
+            ->first();
+
+        $rewardRepository = App::make('SourceScript\V1\Rewards\RewardsRepositoryInterface');
+        $reward = $rewardRepository->where('id', '=', $rewardId)
+            ->first();
+
+        if($reward->point > $user->currentPoints()) return false;
+
+        $userRewardId = DB::table('user_reward')->insertGetId([
+            'user_id' => $userId,
+            'reward_id' => $rewardId,
+            'code' => uniqid('x'),
+            'points' => $reward->point,
+            'claimed' => false
+        ]);
+
+        return $userRewardId;
+    }
 } 

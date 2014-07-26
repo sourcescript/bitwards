@@ -25,6 +25,10 @@ class SourceScriptV1ServiceProvider extends ServiceProvider {
         $this->app->bind('SourceScript\V1\Challenges\ChallengesRepositoryInterface', function() {
             return new Challenges\EloquentChallengesRepository(new Challenges\ChallengesEloquentModel);
         });
+
+        $this->app->bind('SourceScript\V1\Rewards\RewardsRepositoryInterface', function() {
+            return new Rewards\EloquentRewardsRepository(new Rewards\RewardsEloquentModel);
+        });
     }
 
     public function register() {}

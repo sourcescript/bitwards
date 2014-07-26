@@ -43,6 +43,17 @@ class UserController extends ApiController {
         return $this->respond(['status' => 'success']);
     }
 
+    public function claimReward($id)
+    {
+        $userId = ResourceServer::getOwnerId();
+
+        if(!$this->UserRepository->claimReward($userId, $id)) {
+            return $this->respond(['status' => 'error']);
+        }
+
+        return $this->respond(['status' => 'success']);
+    }
+
     public function index()
     {
         $limit = Input::get('limit') ?: 10;

@@ -17,7 +17,7 @@ class CreateUserRewardTable extends Migration {
 			$table->increments('id');
             $table->integer('user_id');
             $table->integer('reward_id');
-            $table->integer('code');
+            $table->string('code')->nullable();
             $table->integer('points');
             $table->boolean('claimed');
 			$table->timestamps();

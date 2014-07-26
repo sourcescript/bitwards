@@ -1,5 +1,6 @@
 <?php  namespace SourceScript\V1\User;
 
+use DB;
 use Illuminate\Database\Eloquent\SoftDeletingTrait;
 use Eloquent;
 
@@ -28,6 +29,33 @@ class UserEloquentModel extends Eloquent {
     {
         return $this->belongsToMany('SourceScript\V1\Challenges\ChallengesEloquentModel', 'user_challenge', 'user_id', 'challenge_id', 'id')
             ->withPivot(['points', 'approved']);
+    }
+
+    public function currentPoints()
+    {
+        $earnedPoints = (int) $this->earnedPoints();
+        $usedPoints = (int) $this->usedPoints();
+
+        return $earnedPoints - $usedPoints;
+    }
+
+    public function earnedPoints()
+    {
+        $earnedPoints = DB::table('user_challenge')
+            ->where('user_id', '=', $this->id)
+            ->where('approved', '=', true)
+            ->get([DB::raw('sum(points) as earned_points')]);
+
+        return $earnedPoints[0]->earned_points;
+    }
+
+    public function usedPoints()
+    {
+        $usedPoints = DB::table('user_reward')
+            ->where('user_id', '=', $this->id)
+            ->get([DB::raw('sum(points) as used_points')]);
+
+        return $usedPoints[0]->used_points;
     }
 
     public function ApprovedChallenges()
