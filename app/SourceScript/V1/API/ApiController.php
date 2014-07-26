@@ -2,6 +2,7 @@
 
 use BaseController, Response;
 use Illuminate\Pagination\Paginator;
+use Input;
 
 abstract class ApiController extends BaseController {
     const STATUS_SUCCESS = 'success';
