@@ -11,7 +11,93 @@
 |
 */
 
+
+Route::get('/login', 'BusinessAuthController@index');
+Route::post('/login', 'BusinessAuthController@login');
+Route::get('/register', 'BusinessAuthController@register');
+Route::post('/register', 'BusinessAuthController@save');
+Route::get('/logout', 'BusinessAuthController@logout');
+
+
+Route::get('/dashboard', 'BusinessMainController@dashboard');
+
 Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::group(['prefix' => '/api/v1'], function ()
+{
+    # Set Namespace
+    $namespace = 'SourceScript\V1\\';
+
+    ###############################################################
+    # API
+    ###############################################################
+    Route::group(['before' => 'oauth:user_profile'], function() use ($namespace)
+    {
+        Route::resource('/users',$namespace.'User\UserController', ['only' => ['update', 'show']]);
+        Route::get('/users/profile', $namespace.'User\UserController@userProfile');
+    });
+
+    Route::group(['before' => 'oauth::user_profile'], function() use ($namespace)
+    {
+        Route::resource('/badges', $namespace.'Badges\BadgesController', ['only' => 'index', 'show']);
+    });
+
+    Route::group(['before' => 'oauth:user_profile'], function() use ($namespace)
+    {
+        Route::resource('/challenges', $namespace.'Challenges\ChallengesController', ['only' => ['index', 'show']]);
+    });
+
+    ################################################################
+    # OAUTH
+    ################################################################
+
+    Route::post('/oauth/access_token', function()
+    {
+        return AuthorizationServer::performAccessTokenFlow();
+    });
+
+
+    Route::get('/oauth/authorize', array('before' => 'check-authorization-params|auth', function()
+    {
+        // get the data from the check-authorization-params filter
+        $params = Session::get('authorize-params');
+
+        // get the user id
+        $params['user_id'] = Auth::user()->id;
+
+        // display the authorization form
+        return View::make('authorization-form', array('params' => $params));
+    }));
+
+
+    Route::post('/oauth/authorize', array('before' => 'check-authorization-params|auth|csrf', function()
+    {
+        // get the data from the check-authorization-params filter
+        $params = Session::get('authorize-params');
+
+        // get the user id
+        $params['user_id'] = Auth::user()->id;
+
+        // check if the user approved or denied the authorization request
+        if (Input::get('approve') !== null) {
+
+            $code = AuthorizationServer::newAuthorizeRequest('user', $params['user_id'], $params);
+
+            Session::forget('authorize-params');
+
+            return Redirect::to(AuthorizationServer::makeRedirectWithCode($code, $params));
+        }
+
+        if (Input::get('deny') !== null) {
+
+            Session::forget('authorize-params');
+
+            return Redirect::to(AuthorizationServer::makeRedirectWithError($params));
+        }
+    }));
+
+});
+

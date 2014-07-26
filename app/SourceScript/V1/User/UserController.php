@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 use SourceScript\V1\API\ApiController;
 use SourceScript\V1\User\Validators\UserCreateValidator;
 use SourceScript\V1\User\Validators\UserUpdateValidator;
+use ResourceServer;
 use Input;
 
 class UserController extends ApiController {
@@ -24,6 +25,13 @@ class UserController extends ApiController {
         $this->UserTransformer = $UserTransformer;
         $this->UserCreateValidator = $UserCreateValidator;
         $this->UserUpdateValidator = $UserUpdateValidator;
+    }
+
+    public function userProfile()
+    {
+        $userId = ResourceServer::getOwnerId();
+
+        return $this->show($userId);
     }
 
     public function index()
@@ -57,6 +65,12 @@ class UserController extends ApiController {
     {
         try {
             $User = $this->UserRepository->findOrFail($id);
+            $user = $User->badges;
+            $queries = \DB::getQueryLog();
+            $last_query = end($queries);
+            var_dump($user);
+            dd($last_query);
+
             $transformedData = $this->UserTransformer->transform($User);
 
             $response = $this->respondItem($transformedData);

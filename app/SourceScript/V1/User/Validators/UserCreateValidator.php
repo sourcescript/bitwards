@@ -7,6 +7,10 @@ class UserCreateValidator extends AbstractValidator implements ValidatorInterfac
 
     public function getRules()
     {
-        return [];
+        return [
+            'fb_id' => 'required',
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email_address' => 'required'];
     }
 }

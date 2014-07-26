@@ -7,4 +7,19 @@ class EloquentUserRepository extends AbstractEloquentRepository implements UserR
     {
         $this->class = $class;
     }
+
+    public function exists($fbId)
+    {
+
+            $user = $this->class
+                ->where('fb_id', $fbId)
+                ->first();
+
+        if(!$user) {
+            return false;
+        }
+
+        return $user;
+    }
+
 } 
