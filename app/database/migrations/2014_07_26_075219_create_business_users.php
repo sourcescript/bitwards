@@ -34,7 +34,7 @@ class CreateBusinessUsers extends Migration {
 	 */
 	public function down()
 	{
-		//
+        Schema::drop('business_users');
 	}
 
 }
