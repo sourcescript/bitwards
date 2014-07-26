@@ -21,6 +21,6 @@ class UserEloquentModel extends Eloquent {
 
     public function badges()
     {
-        return $this->belongsToMany('SourceScript\V1\Badges\BadgesEloquentModel', 'user_badge');
+        return $this->belongsToMany('SourceScript\V1\Badges\BadgesEloquentModel', 'user_badge', 'user_id', 'badge_id', 'id');
     }
 }
