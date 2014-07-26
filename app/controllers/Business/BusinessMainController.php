@@ -1,5 +1,6 @@
 <?php
 
+
 class BusinessMainController extends BaseController {
 
 	public function dashboard()

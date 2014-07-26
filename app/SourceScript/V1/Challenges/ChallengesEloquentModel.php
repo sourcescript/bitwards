@@ -8,4 +8,6 @@ class ChallengesEloquentModel extends Eloquent {
     protected $table = 'challenges';
     protected $fillable = ['business_id', 'name', 'description', 'point', 'image'];
     protected $datas = ['deleted_at'];
+
+
 }
