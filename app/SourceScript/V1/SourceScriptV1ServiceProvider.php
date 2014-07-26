@@ -22,6 +22,9 @@ class SourceScriptV1ServiceProvider extends ServiceProvider {
             return new User\EloquentUserRepository(new User\UserEloquentModel);
         });
 
+        $this->app->bind('SourceScript\V1\Challenges\ChallengesRepositoryInterface', function() {
+            return new Challenges\EloquentChallengesRepository(new Challenges\ChallengesEloquentModel);
+        });
     }
 
     public function register() {}

@@ -23,7 +23,7 @@ Route::get('/dashboard', 'BusinessMainController@dashboard');
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return '';
 });
 
 Route::group(['prefix' => '/api/v1'], function ()
@@ -38,8 +38,12 @@ Route::group(['prefix' => '/api/v1'], function ()
     {
         Route::resource('/users',$namespace.'User\UserController', ['only' => ['update', 'show']]);
         Route::get('/users/profile', $namespace.'User\UserController@userProfile');
+
         Route::resource('/badges', $namespace.'Badges\BadgesController', ['only' => 'index', 'show']);
+
         Route::resource('/challenges', $namespace.'Challenges\ChallengesController', ['only' => ['index', 'show']]);
+        Route::post('/challenges/{id}/accept', $namespace.'User\UserController@acceptChallenge');
+
         Route::resource('/business', $namespace.'Business\BusinessController', ['only' => ['index', 'show']]);
         Route::resource('/rewards', $namespace.'Rewards\RewardsController', ['only' => ['index', 'show']]);
     });

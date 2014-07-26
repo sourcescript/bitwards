@@ -34,6 +34,15 @@ class UserController extends ApiController {
         return $this->show($userId);
     }
 
+    public function acceptChallenge($id)
+    {
+        $userId = ResourceServer::getOwnerId();
+
+        $this->UserRepository->addChallenge($userId, $id);
+
+        return $this->respond(['status' => 'success']);
+    }
+
     public function index()
     {
         $limit = Input::get('limit') ?: 10;
@@ -65,11 +74,6 @@ class UserController extends ApiController {
     {
         try {
             $User = $this->UserRepository->findOrFail($id);
-            $user = $User->badges;
-            $queries = \DB::getQueryLog();
-            $last_query = end($queries);
-            var_dump($user);
-            dd($last_query);
 
             $transformedData = $this->UserTransformer->transform($User);
 

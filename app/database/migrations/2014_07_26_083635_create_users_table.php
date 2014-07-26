@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration {
             $table->string('last_name');
             $table->string('email_address');
             $table->string('fb_id');
-            $table->timestamp('deleted_at');
+            $table->timestamp('deleted_at')->nullable();
 			$table->timestamps();
 		});
 	}

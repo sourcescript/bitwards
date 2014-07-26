@@ -17,7 +17,7 @@ class CreateUserChallengeTable extends Migration {
 			$table->increments('id');
             $table->integer('user_id');
             $table->integer('challenge_id');
-            $table->integer('code')->nullable();
+            $table->text('code')->nullable();
             $table->integer('points');
             $table->boolean('approved');
 			$table->timestamps();

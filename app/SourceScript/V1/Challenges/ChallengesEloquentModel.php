@@ -9,5 +9,9 @@ class ChallengesEloquentModel extends Eloquent {
     protected $fillable = ['business_id', 'name', 'description', 'point', 'image'];
     protected $datas = ['deleted_at'];
 
+    public function users()
+    {
+        return $this->belongsToMany('SourceScript\V1\Users\UsersEloquentModel', 'user_challenge', 'challenge_id', 'user_id');
+    }
 
 }

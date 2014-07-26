@@ -1,5 +1,7 @@
 <?php  namespace SourceScript\V1\User;
 
+use App;
+use DB;
 use SourceScript\V1\Repository\AbstractEloquentRepository;
 
 class EloquentUserRepository extends AbstractEloquentRepository implements UserRepositoryInterface {
@@ -20,6 +22,27 @@ class EloquentUserRepository extends AbstractEloquentRepository implements UserR
         }
 
         return $user;
+    }
+
+    public function addChallenge($userId, $challengeId)
+    {
+        $user = $this->class
+            ->where('id', $userId)
+            ->first();
+
+        $challengeRepository = App::make('SourceScript\V1\Challenges\ChallengesRepositoryInterface');
+        $challenge = $challengeRepository->where('id', '=', $challengeId)
+            ->first();
+
+        $userChallengeId = DB::table('user_challenge')->insertGetId([
+            'user_id' => $userId,
+            'challenge_id' => $challengeId,
+            'code' => uniqid('x'),
+            'points' => $challenge->point,
+            'approved' => false
+        ]);
+
+        return $userChallengeId;
     }
 
 } 
