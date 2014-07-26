@@ -33,7 +33,10 @@
 		],
 		"psr-0": {
                     "AironDumael\\ApiGenerator": "src/"
-                }
+                },
+		"psr-4": {
+            		"SourceScript\\": "app/SourceScript"
+        	}
 	},
 	"scripts": {
 		"post-install-cmd": [

@@ -2,6 +2,6 @@
 
 return [
     'base_directory' => app_path(),
-    'namespace' => 'Test',
+    'namespace' => 'SourceScript',
     'ver'   => 'V1'
 ];
