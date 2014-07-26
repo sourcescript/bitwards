@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="034f0e15-f5e8-4e0f-ad1d-343fed63fa2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/ChallengesTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/ChallengesTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/RewardsTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/RewardsTableSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angelhack.iws" />
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserTransformer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php">
+      <file leaf-file-name="RewardsTableSeeder.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/database/seeds/RewardsTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="943">
-              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.48741722" vertical-offset="0" max-vertical-offset="755">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -67,16 +66,13 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_115352_create_user_badge_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_154017_create_rewards_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_075219_create_business_users.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/ChallengesTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/OAuthSeeder.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Business/BusinessEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_163544_add_image_business_users_table.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/BusinessUsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Business/BusinessTransformer.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/RewardsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsTransformer.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" />
         <option value="$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php" />
@@ -92,6 +88,9 @@
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/ChallengesTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/RewardsTableSeeder.php" />
       </list>
     </option>
   </component>
@@ -857,22 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/OAuthSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7258278" vertical-offset="556" max-vertical-offset="1311">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/ChallengesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3960265" vertical-offset="0" max-vertical-offset="782">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Business/BusinessEloquentModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21324503" vertical-offset="0" max-vertical-offset="755">
@@ -897,30 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/BusinessUsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6092715" vertical-offset="0" max-vertical-offset="828">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24370861" vertical-offset="0" max-vertical-offset="755">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/RewardsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36556292" vertical-offset="0" max-vertical-offset="755">
-          <caret line="13" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
@@ -933,22 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45695364" vertical-offset="0" max-vertical-offset="755">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="755">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5483444" vertical-offset="0" max-vertical-offset="755">
-          <caret line="19" column="55" selection-start-line="14" selection-start-column="16" selection-end-line="18" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1179,8 +1122,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="943">
-          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.3960265" vertical-offset="0" max-vertical-offset="943">
+          <caret line="14" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2900662" vertical-offset="3707" max-vertical-offset="4462">
+          <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="755">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/OAuthSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7258278" vertical-offset="533" max-vertical-offset="1288">
+          <caret line="48" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5483444" vertical-offset="0" max-vertical-offset="755">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5483444" vertical-offset="0" max-vertical-offset="755">
+          <caret line="19" column="66" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/BusinessUsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6092715" vertical-offset="0" max-vertical-offset="828">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/ChallengesTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5483444" vertical-offset="0" max-vertical-offset="782">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/RewardsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48741722" vertical-offset="0" max-vertical-offset="755">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
           <folding />
         </state>
       </provider>

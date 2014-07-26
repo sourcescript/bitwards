@@ -17,7 +17,7 @@ class BadgesTableSeeder extends Seeder {
                 'image' => 'http://placehold.it/100x100',
                 'description' => $faker->paragraph(1),
                 'requirement_type' => $faker->randomElement(['']),
-                'requirement' => $faker->randomNumber()
+                'requirement' => $faker->randomElement(range(1,10))
 			]);
 		}
 	}

@@ -15,8 +15,8 @@ class RewardsTableSeeder extends Seeder {
 			RewardsEloquentModel::create([
                 'business_id' => $faker->randomElement(range(0, 9)),
                 'name' => $faker->word(4),
-                'point' => $faker->randomNumber(),
-                'description' => $faker->paragraph(5)
+                'point' => $faker->randomElement(range(1,10)),
+                'description' => $faker->paragraph(4)
 			]);
 		}
 	}

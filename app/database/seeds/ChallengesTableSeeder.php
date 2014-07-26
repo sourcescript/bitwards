@@ -14,9 +14,9 @@ class ChallengesTableSeeder extends Seeder {
 			SourceScript\V1\Challenges\ChallengesEloquentModel::create([
                 'business_id' => 1,
                 'name' => $faker->word(2),
-                'description' => $faker->paragraph(5),
+                'description' => $faker->paragraph(1),
                 'image' => 'http://placehold.it/200x200',
-                'point' => $faker->randomNumber(),
+                'point' => $faker->randomElement(range(1,10)),
                 'type' => $faker->randomElement([
                     'manual',
                     'social',
