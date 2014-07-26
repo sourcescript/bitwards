@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="034f0e15-f5e8-4e0f-ad1d-343fed63fa2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_07_26_154152_create_user_reward_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_07_26_154152_create_user_reward_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/User/EloquentUserRepository.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/User/EloquentUserRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/SourceScriptV1ServiceProvider.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/SourceScriptV1ServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -31,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php">
+      <file leaf-file-name="UserTransformer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57350993" vertical-offset="1522" max-vertical-offset="3059">
-              <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="943">
+              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -60,7 +58,6 @@
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/Validators/UserCreateValidator.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Repository/AbstractEloquentRepository.php" />
         <option value="$PROJECT_DIR$/app/config/packages/lucadegasperi/oauth2-server-laravel/oauth2.php" />
-        <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php" />
         <option value="$PROJECT_DIR$/APIDOC.md" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserBadgeEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserChallengeEloquentModel.php" />
@@ -72,7 +69,6 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_075219_create_business_users.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/ChallengesTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/OAuthSeeder.php" />
-        <option value="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Business/BusinessEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_163544_add_image_business_users_table.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/BusinessUsersTableSeeder.php" />
@@ -85,15 +81,17 @@
         <option value="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" />
         <option value="$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_122627_create_user_challenge_table.php" />
-        <option value="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/Rewards/RewardsEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_083635_create_users_table.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/SourceScriptV1ServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/EloquentUserRepository.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_07_26_154152_create_user_reward_table.php" />
+        <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php" />
+        <option value="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php" />
+        <option value="$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php" />
+        <option value="$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php" />
       </list>
     </option>
   </component>
@@ -907,22 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5483444" vertical-offset="0" max-vertical-offset="755">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Business/BusinessTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48741722" vertical-offset="0" max-vertical-offset="755">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24370861" vertical-offset="0" max-vertical-offset="755">
@@ -935,14 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36556292" vertical-offset="0" max-vertical-offset="755">
           <caret line="13" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="828">
-          <caret line="18" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1043,14 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.121854305" vertical-offset="0" max-vertical-offset="755">
@@ -1107,34 +1073,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45695364" vertical-offset="0" max-vertical-offset="755">
-          <caret line="16" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57880795" vertical-offset="483" max-vertical-offset="2346">
-          <caret line="49" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/SourceScriptV1ServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70066226" vertical-offset="138" max-vertical-offset="1081">
           <caret line="29" column="91" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6344371" vertical-offset="464" max-vertical-offset="2231">
-          <caret line="43" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1171,10 +1113,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Business/EloquentBusinessRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Business/BusinessTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.121854305" vertical-offset="0" max-vertical-offset="755">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="755">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/Challenges/ChallengesEloquentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42649007" vertical-offset="0" max-vertical-offset="755">
+          <caret line="15" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserEloquentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26887417" vertical-offset="694" max-vertical-offset="2231">
+          <caret line="41" column="31" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2741722" vertical-offset="460" max-vertical-offset="2346">
+          <caret line="38" column="83" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57350993" vertical-offset="1522" max-vertical-offset="3059">
-          <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.45165563" vertical-offset="303" max-vertical-offset="3059">
+          <caret line="33" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/SourceScript/V1/User/UserTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5178808" vertical-offset="0" max-vertical-offset="943">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
           <folding />
         </state>
       </provider>

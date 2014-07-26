@@ -36,8 +36,8 @@ Route::group(['prefix' => '/api/v1'], function ()
     ###############################################################
     Route::group(['before' => 'oauth:user'], function() use ($namespace)
     {
-        Route::resource('/users',$namespace.'User\UserController', ['only' => ['update', 'show']]);
         Route::get('/users/profile', $namespace.'User\UserController@userProfile');
+        Route::resource('/users',$namespace.'User\UserController', ['only' => ['update', 'show']]);
 
         Route::resource('/badges', $namespace.'Badges\BadgesController', ['only' => 'index', 'show']);
 

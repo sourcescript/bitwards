@@ -14,4 +14,9 @@ class ChallengesEloquentModel extends Eloquent {
         return $this->belongsToMany('SourceScript\V1\Users\UsersEloquentModel', 'user_challenge', 'challenge_id', 'user_id');
     }
 
+    public function business()
+    {
+        return $this->belongsTo('BusinessUser');
+    }
+
 }
