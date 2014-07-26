@@ -41,6 +41,7 @@ Route::group(['prefix' => '/api/v1'], function ()
         Route::resource('/badges', $namespace.'Badges\BadgesController', ['only' => 'index', 'show']);
         Route::resource('/challenges', $namespace.'Challenges\ChallengesController', ['only' => ['index', 'show']]);
         Route::resource('/business', $namespace.'Business\BusinessController', ['only' => ['index', 'show']]);
+        Route::resource('/rewards', $namespace.'Rewards\RewardsController', ['only' => ['index', 'show']]);
     });
 
 
