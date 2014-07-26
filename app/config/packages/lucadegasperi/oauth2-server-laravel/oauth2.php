@@ -65,6 +65,34 @@ return array(
             'access_token_ttl' => 3600,
             'auth_token_ttl'   => 3600,
         ),
+        'facebook' => array(
+            'class' => 'SourceScript\V1\OAuth2\Server\Grant\Facebook',
+            'access_token_ttl' => 604800,
+            'callback' => function ($fbId, $firstName, $lastName, $emailAddress) {
+
+                $userRepository = App::make('SourceScript\V1\User\UserRepositoryInterface');
+
+                $user = $userRepository->exists($fbId);
+
+                if($user) {
+                    return $user->id;
+                }
+
+                $completeCredentials = [
+                    'fb_id' => $fbId,
+                    'first_name' => $firstName,
+                    'last_name' => $lastName,
+                    'email_address' => $emailAddress,
+                ];
+
+                $user = $userRepository->create(
+                    $completeCredentials,
+                    App::make('SourceScript\V1\User\Validators\UserCreateValidator')
+                );
+
+                return $user->id;
+            }
+        ),
 
         'password' => array(
             'class'            => 'League\OAuth2\Server\Grant\Password',

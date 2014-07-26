@@ -18,7 +18,7 @@ class SourceScriptV1ServiceProvider extends ServiceProvider {
             return new Model\EloquentModelRepository(new Model\ModelEloquentModel);
         });
 
-        $this->app->bind('SourceScript\V1\Model\UserRepositoryInterface', function() {
+        $this->app->bind('SourceScript\V1\User\UserRepositoryInterface', function() {
             return new User\EloquentUserRepository(new User\UserEloquentModel);
         });
 
