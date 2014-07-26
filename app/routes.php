@@ -11,6 +11,16 @@
 |
 */
 
+
+Route::get('/login', 'BusinessAuthController@index');
+Route::post('/login', 'BusinessAuthController@login');
+Route::get('/register', 'BusinessAuthController@register');
+Route::post('/register', 'BusinessAuthController@save');
+Route::get('/logout', 'BusinessAuthController@logout');
+
+
+Route::get('/dashboard', 'BusinessMainController@dashboard');
+
 Route::get('/', function()
 {
 	return View::make('hello');
