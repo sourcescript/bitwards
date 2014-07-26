@@ -24,10 +24,9 @@ Route::group(['prefix' => '/api/v1'], function ()
     # API
     ###############################################################
     Route::group(['before' => 'oauth:user_profile'], function() use ($namespace) {
-        Route::resource('/users',$namespace.'User\UserController', ['only' => ['update']]);
+        Route::resource('/users',$namespace.'User\UserController', ['only' => ['update', 'show']]);
         Route::get('/users/profile', $namespace.'User\UserController@userProfile');
     });
-
 
     ################################################################
     # OAUTH

@@ -11,3 +11,10 @@ first_name = qwe
 last_name = lastname
 email_address = qwewqeq@qweqwe.com
 
+## User Update
+PUT: /api/v1/users
+GET: /api/v1/users/{id}
+
+
+## Get Current User Profile
+GET: /api/v1/users/profile
