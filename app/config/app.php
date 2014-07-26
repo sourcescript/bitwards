@@ -122,6 +122,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider',
+        'Barryvdh\Cors\CorsServiceProvider',
 		'SourceScript\V1\SourceScriptV1ServiceProvider',
 
 		'AironDumael\ApiGenerator\ApiGeneratorServiceProvider',
