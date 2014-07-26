@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="034f0e15-f5e8-4e0f-ad1d-343fed63fa2f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" afterPath="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php" afterPath="$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filters.php" afterPath="$PROJECT_DIR$/app/filters.php" />
     </list>
     <ignored path="angelhack.iws" />
@@ -26,14 +26,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="filters.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/filters.php">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.030463576" vertical-offset="0" max-vertical-offset="2001">
-              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-              <folding>
-                <element signature="e#48#453#0#PHP" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.7615894" vertical-offset="184" max-vertical-offset="1150">
+              <caret line="33" column="11" selection-start-line="28" selection-start-column="10" selection-end-line="33" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,6 +88,7 @@
         <option value="$PROJECT_DIR$/app/database/seeds/BadgesTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/SourceScript/V1/API/ApiController.php" />
         <option value="$PROJECT_DIR$/app/filters.php" />
+        <option value="$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php" />
       </list>
     </option>
   </component>
@@ -1127,14 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36556292" vertical-offset="230" max-vertical-offset="1150">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
@@ -1161,11 +1152,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/filters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030463576" vertical-offset="0" max-vertical-offset="2001">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding>
-            <element signature="e#48#453#0#PHP" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.030463576" vertical-offset="0" max-vertical-offset="1978">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7615894" vertical-offset="184" max-vertical-offset="1150">
+          <caret line="33" column="11" selection-start-line="28" selection-start-column="10" selection-end-line="33" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
