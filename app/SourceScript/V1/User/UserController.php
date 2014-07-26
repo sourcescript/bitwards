@@ -43,6 +43,17 @@ class UserController extends ApiController {
         return $this->respond(['status' => 'success']);
     }
 
+    public function finishChallenge($id)
+    {
+        $userId = ResourceServer::getOwnerId();
+
+        if(! $this->UserRepository->finishChallenge($userId, $id)) {
+            return $this->respond(['status' => 'error']);
+        }
+
+        return $this->respond(['status' => 'success']);
+    }
+
     public function claimReward($id)
     {
         $userId = ResourceServer::getOwnerId();

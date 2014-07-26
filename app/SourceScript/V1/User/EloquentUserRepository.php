@@ -2,6 +2,7 @@
 
 use App;
 use DB;
+use Input;
 use SourceScript\V1\Repository\AbstractEloquentRepository;
 
 class EloquentUserRepository extends AbstractEloquentRepository implements UserRepositoryInterface {
@@ -42,6 +43,45 @@ class EloquentUserRepository extends AbstractEloquentRepository implements UserR
         ]);
 
         return $userChallengeId;
+    }
+
+    public function finishChallenge($userId, $challengeId)
+    {
+        $code = Input::get('code');
+
+        if(! $this->isValidChallengeCode($challengeId, $code))
+        {
+            return false;
+        }
+
+        $user = DB::table('user_challenge')
+            ->where('user_id', '=', $userId)
+            ->where('challenge_id', '=', $challengeId)
+            ->first();
+
+        DB::table('user_challenge')
+            ->where('user_id', '=', $userId)
+            ->where('challenge_id', '=', $challengeId)
+            ->update(['approved' => true]);
+
+        return true;
+    }
+
+    public function isValidChallengeCode($challengeId, $code)
+    {
+        $challenge = DB::table('challenge_code')
+            ->where('challenge_id', '=', $challengeId)
+            ->where('code', '=', $code)
+            ->where('used', '=', false)
+            ->first();
+
+        if(!$challenge) { return false; }
+
+        DB::table('challenge_code')
+            ->where('id', '=', $challenge->id)
+            ->update(['used' => true]);
+
+        return true;
     }
 
     public function claimReward($userId, $rewardId)
