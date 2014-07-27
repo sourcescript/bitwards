@@ -16,6 +16,7 @@ class ChallengesTransformer extends AbstractTransformer {
             'image' => $item->image,
             'point' => (int) $item->point,
             'type' => $item->type,
+            'status' => $item->status(),
             'business' => $businessTransformer->transform($item->business)
         ];
     }
