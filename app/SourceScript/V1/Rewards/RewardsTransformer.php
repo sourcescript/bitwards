@@ -6,11 +6,13 @@ class RewardsTransformer extends AbstractTransformer {
 
     public function transform($item)
     {
+        $businessTransformer = new BusinessTransformer();
         return [
             'id' => $item->id,
             'name' => $item->name,
             'point' => (int) $item->point,
-            'description' => $item->description
+            'description' => $item->description,
+            'business' => $businessTransformer->transform($item->business)
         ];
     }
 }
