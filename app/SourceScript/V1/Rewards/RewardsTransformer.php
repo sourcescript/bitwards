@@ -1,6 +1,7 @@
 <?php  namespace SourceScript\V1\Rewards;
 
 use SourceScript\V1\API\AbstractTransformer;
+use SourceScript\V1\Business\BusinessTransformer;
 
 class RewardsTransformer extends AbstractTransformer {
 
