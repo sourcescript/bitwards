@@ -26,8 +26,8 @@
       <file leaf-file-name="ChallengeCodeSeeder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/database/seeds/ChallengeCodeSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57880795" vertical-offset="0" max-vertical-offset="755">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6701987" vertical-offset="0" max-vertical-offset="755">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1044,8 +1044,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/ChallengeCodeSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57880795" vertical-offset="0" max-vertical-offset="755">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.6701987" vertical-offset="0" max-vertical-offset="755">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
