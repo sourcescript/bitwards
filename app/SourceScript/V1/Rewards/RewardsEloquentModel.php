@@ -13,4 +13,9 @@ class RewardsEloquentModel extends Eloquent {
     {
         return $this->belongsToMany('SourceScript\V1\Users\UsersEloquentModel', 'user_reward', 'reward_id', 'user_id');
     }
+
+    public function business()
+    {
+        return $this->belongsTo('BusinessUser');
+    }
 }
