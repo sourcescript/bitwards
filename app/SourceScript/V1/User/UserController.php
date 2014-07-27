@@ -51,7 +51,13 @@ class UserController extends ApiController {
             return $this->respond(['status' => 'error']);
         }
 
-        return $this->respond(['status' => 'success']);
+        $User = $this->UserRepository->findOrFail($userId);
+
+        $transformedData = $this->UserTransformer->transform($User);
+
+        $response = $this->respondItem($transformedData);
+
+        return $response;
     }
 
     public function claimReward($id)
