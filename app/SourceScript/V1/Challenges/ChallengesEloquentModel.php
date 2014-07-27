@@ -28,12 +28,12 @@ class ChallengesEloquentModel extends Eloquent {
         $userChallengesDone = DB::table('user_challenge')
             ->where('user_id', '=', $userId)
             ->where('approved', '=', true)
-            ->lists('id');
+            ->lists('challenge_id');
 
         $userChallengesStarted = DB::table('user_challenge')
             ->where('user_id', '=', $userId)
             ->where('approved', '=', false)
-            ->lists('id');
+            ->lists('challenge_id');
 
         if(in_array($this->id, $userChallengesStarted)) {
             return 'pending';
