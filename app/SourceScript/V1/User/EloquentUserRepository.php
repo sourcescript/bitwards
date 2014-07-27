@@ -104,6 +104,10 @@ class EloquentUserRepository extends AbstractEloquentRepository implements UserR
             'claimed' => false
         ]);
 
-        return $userRewardId;
+        $reward = DB::table('user_reward')
+            ->where('id', '=', $userRewardId)
+            ->first();
+
+        return $reward;
     }
 } 

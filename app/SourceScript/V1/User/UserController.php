@@ -64,11 +64,14 @@ class UserController extends ApiController {
     {
         $userId = ResourceServer::getOwnerId();
 
-        if(!$this->UserRepository->claimReward($userId, $id)) {
+        if(! ($reward = $this->UserRepository->claimReward($userId, $id))) {
             return $this->respond(['status' => 'error']);
         }
 
-        return $this->respond(['status' => 'success']);
+        return $this->respond([
+            'status' => 'success',
+            'reward' => $reward
+        ]);
     }
 
     public function index()
