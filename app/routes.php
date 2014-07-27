@@ -26,6 +26,22 @@ Route::get('/', function()
 	return '';
 });
 
+Route::get('/qrs/{id}', function($id) {
+    $qrcodes = DB::table('challenge_code')
+        ->where('challenge_id', '=', $id)
+        ->lists('code');
+    $qrCode = new Endroid\QrCode\QrCode();
+    $qrCode->setSize(300);
+    $qrCode->setPadding(10);
+
+
+//        $qrCode->setText($qrcodes[0]['code']);
+//        $qrCode->render();
+
+
+});
+
+
 Route::group(['prefix' => '/api/v1'], function ()
 {
     # Set Namespace
@@ -49,10 +65,9 @@ Route::group(['prefix' => '/api/v1'], function ()
 
         Route::post('/rewards/{id}/claim', $namespace.'User\UserController@claimReward');
         Route::resource('/rewards', $namespace.'Rewards\RewardsController', ['only' => ['index', 'show']]);
+
+
     });
-
-
-
     ################################################################
     # OAUTH
     ################################################################

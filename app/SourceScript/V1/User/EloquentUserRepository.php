@@ -49,10 +49,10 @@ class EloquentUserRepository extends AbstractEloquentRepository implements UserR
     {
         $code = Input::get('code');
 
-        if(! $this->isValidChallengeCode($challengeId, $code))
-        {
-            return false;
-        }
+//        if(! $this->isValidChallengeCode($challengeId, $code))
+//        {
+//            return false;
+//        }
 
         $user = DB::table('user_challenge')
             ->where('user_id', '=', $userId)
